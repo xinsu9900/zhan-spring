@@ -1,159 +1,74 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>有盏春晴 · Zhan Spring — 功能型新中式茶饮与甜品</title>
-<meta name="description" content="有盏春晴：将中医体质与现代茶饮甜品融合的功能型新中式品牌。盏起春晴，身心共晴明。" />
-<style>
-  :root{
-    --bg:#f9f5ef;
-    --ink:#1f2a21;
-    --sub:#5c6a61;
-    --line:#e6ded1;
-    --accent:#d85c3a;
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.65}
-  a{color:var(--accent);text-decoration:none}
-  a:hover{text-decoration:underline}
-  .container{max-width:980px;margin:0 auto;padding:28px 18px}
-  header{display:flex;align-items:center;gap:18px;justify-content:space-between}
-  nav a{margin:0 8px;color:var(--sub)}
-  .hero{display:grid;place-items:center;text-align:center;padding:36px 0 8px}
-  .hero img{max-width:340px;width:70%;height:auto;display:block;margin:0 auto 14px}
-  .slogan{font-size:18px;color:var(--sub)}
-  .tag{margin-top:10px;font-size:14px;color:#7a837b}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-  section{padding:28px 0;border-top:1px solid var(--line)}
-  h2{margin:0 0 10px;font-size:22px}
-  p{margin:8px 0}
-  ul{margin:8px 0 0 18px}
-  .card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px}
-  .series .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:6px 10px;margin:6px 6px 0 0;font-size:14px;background:#fff}
-  .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
-  .btn{display:inline-block;background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px}
-  .btn.outline{background:transparent;border:1px solid var(--ink);color:var(--ink)}
-  footer{padding:28px 0;color:#6b726c;text-align:center;border-top:1px solid var(--line);margin-top:18px}
-  @media (max-width:800px){.grid{grid-template-columns:1fr}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>有盏春晴 Zhan Spring</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfaf6;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #8b5e3c;
+            color: white;
+            padding: 30px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+        main {
+            padding: 40px 20px;
+        }
+        main h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        main p {
+            font-size: 1.1em;
+            line-height: 1.6em;
+            max-width: 700px;
+            margin: auto;
+        }
+        footer {
+            background-color: #8b5e3c;
+            color: white;
+            padding: 15px 0;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
     <header>
-      <div style="font-weight:600">有盏春晴 · Zhan Spring</div>
-      <nav>
-        <a href="#about">关于</a>
-        <a href="#value">价值</a>
-        <a href="#series">产品</a>
-        <a href="#quiz">体质识别</a>
-        <a href="#model">经营</a>
-        <a href="#contact">联系</a>
-      </nav>
+        <h1>有盏春晴 · Zhan Spring</h1>
+        <p>一盏茶，一份春意</p>
     </header>
 
-    <div class="hero">
-      <img src="5B8F4089-4D04-4B86-8C3F-6FCC49157575.png" alt="有盏春晴 Zhan Spring Logo">
-      <div class="slogan">盏起春晴，身心共晴明</div>
-      <div class="tag">Functional Oriental Desserts & Teas · 功能型新中式茶饮与甜品</div>
-      <div class="cta">
-        <a class="btn" href="#contact">商务合作 / Business</a>
-        <a class="btn outline" href="#about">了解品牌</a>
-      </div>
-    </div>
-
-    <section id="about">
-      <h2>品牌概述</h2>
-      <div class="grid">
-        <div class="card">
-          <p>「有盏春晴」将 <b>中医九大体质</b> 与现代茶饮甜品融合：以体质识别→功能配方→美学包装→文化体验，提供可日常坚持的身心调养。</p>
-          <p>我们相信：<i>甜品可以成为身体的朋友</i>。不是控制身体，而是回应身体。</p>
-        </div>
-        <div class="card">
-          <p><b>目标客群</b>：注重健康的都市女性、对东方养生感兴趣的人群、功能性消费人群（助眠、祛湿、养颜、补气、养肝、顺气）。</p>
-          <p><b>首店</b>：洛杉矶华人高密度区域，后续拓展至健康意识强的社区与高端零售。</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="value">
-      <h2>核心价值与差异</h2>
-      <div class="grid">
-        <div class="card">
-          <ul>
-            <li><b>明确功效：</b>六大功能线，基于中医理论与食养逻辑。</li>
-            <li><b>闭环体验：</b>体质问卷→AI推荐→饮后反馈→会员档案。</li>
-            <li><b>东方美学：</b>诗意包装、节气内容、门店感官沉浸。</li>
-            <li><b>稀缺定位：</b>以“体质”为核心，形成认知壁垒。</li>
-          </ul>
-        </div>
-        <div class="card">
-          <p><b>商业亮点</b></p>
-          <ul>
-            <li>700–900 sqft 轻资产门店，2–3人运营。</li>
-            <li>月度OPEX $25–28K；日均 ~120 单可打平。</li>
-            <li>18–24个月回本；瓶装线推出后估值提升空间显著。</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="series" class="series">
-      <h2>产品线（六大系列）</h2>
-      <div class="card">
-        <span class="pill">晞 · 祛湿 — 湿退身轻，一盏晞来</span>
-        <span class="pill">眠 · 助眠 — 梦扰心浮，一盏入宁</span>
-        <span class="pill">元 · 补气 — 精耗气散，一盏归藏</span>
-        <span class="pill">颜 · 养颜 — 气敛容枯，一盏春融</span>
-        <span class="pill">肝 · 养肝 — 肝郁气沉，一盏清舒</span>
-        <span class="pill">气 · 顺气 — 气弱神倦，一盏扶中</span>
-      </div>
-    </section>
-
-    <section id="quiz">
-      <h2>体质识别与个性化</h2>
-      <div class="grid">
-        <div class="card">
-          <p><b>5分钟体质问卷</b>：基于中医九大体质；店内 iPad / 扫码完成。</p>
-          <p><b>AI 智能推荐</b>：即时生成体质报告与匹配饮品。</p>
-          <p><b>中医顾问</b>（可选）：提供进一步调养建议。</p>
-        </div>
-        <div class="card">
-          <p><b>会员系统</b>：记录体质趋势、偏好雷达、情绪日记、签语收藏与挑战进度；后续可接入远程咨询。</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="model">
-      <h2>运营与渠道</h2>
-      <div class="grid">
-        <div class="card">
-          <p><b>直营门店</b>：感官沉浸 + 互动动线；不设传统等候台。</p>
-          <p><b>外卖 / 配送</b>：覆盖周边 5km 高密度区域。</p>
-          <p><b>瓶装线</b>：RTD 标品进驻高端超市与精品零售。</p>
-        </div>
-        <div class="card">
-          <p><b>内容与社群</b>：二十四节气内容矩阵、#一盏一签 互动、用户体质日记、联名共创。</p>
-          <p><b>知识产权</b>：中英商标、签语交互设计、命名版权与算法加密。</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>联系与合作</h2>
-      <div class="card">
-        <p>投资 / 联名 / 门店合作：</p>
+    <main>
+        <h2>欢迎来到有盏春晴</h2>
         <p>
-          Email：<a href="mailto:anasu9900@gmail.com">anasu9900@gmail.com</a>
-          &nbsp;|&nbsp; Instagram / 小红书：@ZhanSpring
+            我们将传统中医智慧与现代茶饮甜品文化相结合，  
+            为您带来健康、养生与美味的独特体验。  
+            店内提供体质检测、功效型饮品及中式甜品，  
+            为不同体质的顾客量身定制健康方案。  
         </p>
-        <p class="tag">Pitch / Deck 可按需发送。</p>
-      </div>
-    </section>
+        <p>
+            Coming soon in Los Angeles · 即将开业
+        </p>
+    </main>
 
     <footer>
-      © <script>document.write(new Date().getFullYear())</script> 有盏春晴 · Zhan Spring. All rights reserved.
+        &copy; 2025 有盏春晴 Zhan Spring | All Rights Reserved
     </footer>
-  </div>
 </body>
 </html>
